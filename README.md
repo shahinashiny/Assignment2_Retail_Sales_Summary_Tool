@@ -31,71 +31,166 @@ Deliver a working Python tool that reads the Superstore dataset, processes the s
 
 ## User Stories Implementation
 
-### US1 – Load Dataset
+## US1 – Load Dataset
+User Story
 
-#### User Story
-As a data analyst,  
-I want to load the retail sales dataset  
+As a data analyst,
+I want to load the retail sales dataset
 so that it can be processed and analyzed.
 
-#### Implementation
-- Created `loaddata.py` module
-- Implemented `load_data()` function
-- Loaded the Superstore dataset using pandas
-- Ensured the dataset is read correctly from the `data` folder
+Story Point Estimation
 
-#### Definition of Done
-- Dataset loads successfully using `load_data()`
-- DataFrame is returned for further processing
-- First rows of data can be displayed for verification
+UX: 1
+Design: 0
+Front: 1
+Back: 2
+Total: 4
 
+Implementation
 
----
+Created loaddata.py module
 
-### US2 – Clean Dataset
+Implemented load_data() function
 
-#### User Story
-As a data analyst,  
-I want to clean the dataset  
-so that it is ready for accurate analysis.
+Loaded the Superstore dataset using pandas
 
-#### Implementation
-- Created `clean_data.py` module
-- Implemented `clean_data()` function
-- Converted date columns to datetime format
-- Converted numeric fields (Sales, Profit, Quantity, Discount) to numeric types
-- Removed rows with missing values in important columns
+Ensured the dataset is read correctly from the data folder
 
-#### Definition of Done
-- Dataset is cleaned successfully
-- Data types are corrected
-- Missing values in critical columns are handled
-- Cleaned dataset is returned for analysis
+Definition of Done
 
+Dataset loads successfully using load_data()
 
----
+DataFrame is returned for further processing
 
-### US3 – Analyze Sales Data
+First rows of data can be displayed for verification
 
-#### User Story
-As a data analyst,  
-I want to analyze the cleaned retail dataset  
-so that I can understand overall sales performance.
+## US2 – Clean Dataset
+User Story
 
-#### Implementation
-- Created `analyze.py` module
-- Implemented `sales_summary()` function
-- Calculated:
-  - Total Sales
-  - Total Profit
-  - Average Sales
-- Integrated analysis into `main.py`
+As a user,
+I want the tool to clean the dataset (missing values/format issues)
+so that the analysis is accurate.
 
-#### Definition of Done
-- Sales summary statistics are calculated correctly
-- Program runs successfully from `main.py`
-- Results are displayed in the terminal
+Story Point Estimation
 
+UX: 1
+Design: 0
+Front: 2
+Back: 4
+Total: 7
+
+Implementation
+
+Implemented data cleaning functions
+
+Handled missing values
+
+Converted date columns to correct format
+
+Converted numeric columns correctly
+
+Definition of Done
+
+Clean dataset prepared for analysis
+
+Dataset validated after cleaning
+
+Code committed to GitHub
+
+## US3 – Generate Total Sales and Profit Summary
+User Story
+
+As a user,
+I want to see total sales and total profit summaries
+so that I understand business performance.
+
+Story Point Estimation
+
+UX: 1
+Design: 1
+Front: 2
+Back: 3
+Total: 7
+
+Implementation
+
+Implemented function to calculate total sales
+
+Implemented function to calculate total profit
+
+Displayed summary results clearly
+
+Definition of Done
+
+Sales and profit totals calculated correctly
+
+Results verified using dataset
+
+Code pushed to GitHub
+
+## US4 – Analyze Sales and Profit by Category
+User Story
+
+As a user,
+I want sales and profit breakdown by category and sub-category
+so that I know which products perform best.
+
+Story Point Estimation
+
+UX: 1
+Design: 1
+Front: 2
+Back: 4
+Total: 8
+
+Implementation
+
+Implemented category analysis
+
+Grouped data by category and sub-category
+
+Calculated sales and profit values
+
+Definition of Done
+
+Category analysis results generated
+
+Results verified using dataset
+
+Code committed to GitHub
+
+## US5 – Identify Top Products and Customers
+User Story
+
+As a user,
+I want to view top 10 products, repeated products, and customers by sales
+so that I can identify key contributors.
+
+Story Point Estimation
+
+UX: 1
+Design: 1
+Front: 3
+Back: 4
+Total: 9
+
+Implementation
+
+Calculated top 10 products by sales
+
+Calculated top 10 customers by sales
+
+Identified repeated products
+
+Sorted results by sales value
+
+Definition of Done
+
+Top products and customers calculated correctly
+
+Output verified
+
+Code committed to GitHub
 ## Team Members
 - Member 1: Shahina Shailk
 - Member 2: Simran Kaur
