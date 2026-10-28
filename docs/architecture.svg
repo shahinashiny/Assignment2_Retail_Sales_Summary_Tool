@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="480" viewBox="0 0 1240 480" role="img" aria-labelledby="title desc">
+<title id="title">Retail Sales Summary Tool architecture</title>
+<desc id="desc">Local Python workflow from CSV input through data loading and cleaning to sales analysis and charts.</desc>
+<defs>
+  <linearGradient id="teal" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#0f9f9a"/><stop offset="100%" stop-color="#25c2b0"/></linearGradient>
+  <linearGradient id="blue" x1="0" x2="1"><stop offset="0%" stop-color="#4778d0"/><stop offset="100%" stop-color="#7c6ce3"/></linearGradient>
+  <linearGradient id="profit" x1="0" x2="1"><stop offset="0%" stop-color="#4387d8"/><stop offset="100%" stop-color="#6a9df3"/></linearGradient>
+  <style>
+    text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#1c2b43}
+    .title{font-size:31px;font-weight:800;letter-spacing:-.6px}
+    .subtitle{font-size:15px;fill:#5b6b82}
+    .small{font-size:12px;fill:#65758b}
+    .label{font-size:16px;font-weight:600}
+    .num{font-size:15px;font-weight:700}
+    .axis{stroke:#dfe6ef;stroke-width:1}
+    .panel{fill:#ffffff;stroke:#e1e8f1;stroke-width:1.2}
+  </style>
+</defs>
+<rect width="1240" height="480" rx="22" fill="#f4f7fb"/>
+<text x="48" y="58" class="title">Retail Sales Summary Tool</text>
+<text x="48" y="88" class="subtitle">A lightweight analytics workflow built with Python, pandas and Matplotlib</text>
+<rect x="48" y="124" width="1144" height="286" rx="20" fill="#fff" stroke="#e1e8f1"/>
+<g>
+<rect x="76" y="178" width="184" height="178" rx="14" fill="#e6f5f4" stroke="#65bdb5" stroke-width="1.3"/>
+<circle cx="100" cy="203" r="13" fill="#65bdb5"/><text x="100" y="207" text-anchor="middle" font-size="10" font-weight="800" fill="#fff" style="fill:#fff">01</text>
+<text x="92" y="239" font-size="17" font-weight="800">Input data</text>
+<text x="92" y="271" font-size="11.5" fill="#42536a">data/superstore.csv</text><text x="92" y="294" font-size="11.5" fill="#42536a">Retail order rows</text><text x="92" y="317" font-size="11.5" fill="#42536a">Sales, profit, product fields</text>
+</g><g>
+<rect x="302" y="178" width="184" height="178" rx="14" fill="#ebf1ff" stroke="#8aa5e5" stroke-width="1.3"/>
+<circle cx="326" cy="203" r="13" fill="#8aa5e5"/><text x="326" y="207" text-anchor="middle" font-size="10" font-weight="800" fill="#fff" style="fill:#fff">02</text>
+<text x="318" y="239" font-size="17" font-weight="800">Load &amp; clean</text>
+<text x="318" y="271" font-size="11.5" fill="#42536a">pandas CSV loader</text><text x="318" y="294" font-size="11.5" fill="#42536a">Normalize text whitespace</text><text x="318" y="317" font-size="11.5" fill="#42536a">Parse dates and numeric fields</text>
+</g><g>
+<rect x="528" y="178" width="184" height="178" rx="14" fill="#f0edff" stroke="#a69bef" stroke-width="1.3"/>
+<circle cx="552" cy="203" r="13" fill="#a69bef"/><text x="552" y="207" text-anchor="middle" font-size="10" font-weight="800" fill="#fff" style="fill:#fff">03</text>
+<text x="544" y="239" font-size="17" font-weight="800">Analyze</text>
+<text x="544" y="271" font-size="11.5" fill="#42536a">Totals &amp; average sales</text><text x="544" y="294" font-size="11.5" fill="#42536a">Top products &amp; customers</text><text x="544" y="317" font-size="11.5" fill="#42536a">Repeated product frequency</text>
+</g><g>
+<rect x="754" y="178" width="184" height="178" rx="14" fill="#fff4e7" stroke="#e8b97c" stroke-width="1.3"/>
+<circle cx="778" cy="203" r="13" fill="#e8b97c"/><text x="778" y="207" text-anchor="middle" font-size="10" font-weight="800" fill="#fff" style="fill:#fff">04</text>
+<text x="770" y="239" font-size="17" font-weight="800">Visualize</text>
+<text x="770" y="271" font-size="11.5" fill="#42536a">Sales and profit by category</text><text x="770" y="294" font-size="11.5" fill="#42536a">Top products and customers</text><text x="770" y="317" font-size="11.5" fill="#42536a">Matplotlib charts</text>
+</g><g>
+<rect x="980" y="178" width="184" height="178" rx="14" fill="#e9f7ed" stroke="#7ec99b" stroke-width="1.3"/>
+<circle cx="1004" cy="203" r="13" fill="#7ec99b"/><text x="1004" y="207" text-anchor="middle" font-size="10" font-weight="800" fill="#fff" style="fill:#fff">05</text>
+<text x="996" y="239" font-size="17" font-weight="800">Insights</text>
+<text x="996" y="271" font-size="11.5" fill="#42536a">Business summaries</text><text x="996" y="294" font-size="11.5" fill="#42536a">Ranked tables</text><text x="996" y="317" font-size="11.5" fill="#42536a">Charts displayed to user</text>
+</g>
+<path d="M 260 267 H 292" stroke="#8d9caf" stroke-width="2" fill="none"/><path d="M 284 260 L 292 267 L 284 274" stroke="#8d9caf" stroke-width="2" fill="none"/><path d="M 486 267 H 518" stroke="#8d9caf" stroke-width="2" fill="none"/><path d="M 510 260 L 518 267 L 510 274" stroke="#8d9caf" stroke-width="2" fill="none"/><path d="M 712 267 H 744" stroke="#8d9caf" stroke-width="2" fill="none"/><path d="M 736 260 L 744 267 L 736 274" stroke="#8d9caf" stroke-width="2" fill="none"/><path d="M 938 267 H 970" stroke="#8d9caf" stroke-width="2" fill="none"/><path d="M 962 260 L 970 267 L 962 274" stroke="#8d9caf" stroke-width="2" fill="none"/>
+<text x="48" y="447" class="small">Scope: the workflow represented by src/main.py, loaddata.py, clean_data.py, analyze.py and visualize.py.</text>
+</svg>
