@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<title id="title">Monthly sales trend</title>
+<desc id="desc">Line chart showing monthly sales totals from the included retail dataset. Rows with invalid dates are excluded.</desc>
+<defs>
+  <linearGradient id="teal" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#0f9f9a"/><stop offset="100%" stop-color="#25c2b0"/></linearGradient>
+  <linearGradient id="blue" x1="0" x2="1"><stop offset="0%" stop-color="#4778d0"/><stop offset="100%" stop-color="#7c6ce3"/></linearGradient>
+  <linearGradient id="profit" x1="0" x2="1"><stop offset="0%" stop-color="#4387d8"/><stop offset="100%" stop-color="#6a9df3"/></linearGradient>
+  <style>
+    text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#1c2b43}
+    .title{font-size:31px;font-weight:800;letter-spacing:-.6px}
+    .subtitle{font-size:15px;fill:#5b6b82}
+    .small{font-size:12px;fill:#65758b}
+    .label{font-size:16px;font-weight:600}
+    .num{font-size:15px;font-weight:700}
+    .axis{stroke:#dfe6ef;stroke-width:1}
+    .panel{fill:#ffffff;stroke:#e1e8f1;stroke-width:1.2}
+  </style>
+</defs>
+<rect width="1200" height="560" rx="22" fill="#f4f7fb"/>
+<text x="48" y="58" class="title">Monthly Sales Trend</text>
+<text x="48" y="88" class="subtitle">Sales grouped by valid Order Date month; rows with unparseable dates are omitted from this view.</text>
+<rect x="48" y="112" width="1104" height="382" rx="18" class="panel"/>
+<line class="axis" x1="94" y1="436" x2="1124" y2="436"/><text class="small" x="78" y="440" text-anchor="end">0.0K</text><line class="axis" x1="94" y1="389.3333333333333" x2="1124" y2="389.3333333333333"/><text class="small" x="78" y="393.3333333333333" text-anchor="end">20.0K</text><line class="axis" x1="94" y1="342.6666666666667" x2="1124" y2="342.6666666666667"/><text class="small" x="78" y="346.6666666666667" text-anchor="end">40.0K</text><line class="axis" x1="94" y1="296" x2="1124" y2="296"/><text class="small" x="78" y="300" text-anchor="end">60.0K</text><line class="axis" x1="94" y1="249.33333333333334" x2="1124" y2="249.33333333333334"/><text class="small" x="78" y="253.33333333333334" text-anchor="end">80.0K</text><line class="axis" x1="94" y1="202.66666666666666" x2="1124" y2="202.66666666666666"/><text class="small" x="78" y="206.66666666666666" text-anchor="end">100.0K</text><line class="axis" x1="94" y1="156" x2="1124" y2="156"/><text class="small" x="78" y="160" text-anchor="end">120.0K</text>
+<line x1="94" y1="156" x2="94" y2="444" stroke="#cdd7e4" stroke-dasharray="4 5"/><text class="small" x="94" y="468" text-anchor="middle">2014</text><line x1="356.97872340425533" y1="156" x2="356.97872340425533" y2="444" stroke="#cdd7e4" stroke-dasharray="4 5"/><text class="small" x="356.97872340425533" y="468" text-anchor="middle">2015</text><line x1="619.9574468085107" y1="156" x2="619.9574468085107" y2="444" stroke="#cdd7e4" stroke-dasharray="4 5"/><text class="small" x="619.9574468085107" y="468" text-anchor="middle">2016</text><line x1="882.936170212766" y1="156" x2="882.936170212766" y2="444" stroke="#cdd7e4" stroke-dasharray="4 5"/><text class="small" x="882.936170212766" y="468" text-anchor="middle">2017</text>
+<path d="M94.00 405.15 L115.91 425.45 L137.83 307.40 L159.74 372.53 L181.66 380.82 L203.57 360.77 L225.49 357.21 L247.40 375.01 L269.32 252.77 L291.23 363.23 L313.15 254.42 L335.06 280.57 L356.98 393.29 L378.89 408.46 L400.81 346.65 L422.72 356.53 L444.64 365.99 L466.55 380.44 L488.47 369.54 L510.38 354.46 L532.30 287.59 L554.21 366.89 L576.13 267.58 L598.04 267.43 L619.96 395.46 L641.87 383.24 L663.79 316.55 L685.70 351.48 L707.62 315.65 L729.53 343.98 L751.45 348.06 L773.36 369.03 L795.28 270.13 L817.19 298.49 L839.11 257.80 L861.02 218.57 L882.94 346.24 L904.85 390.35 L926.77 302.92 L948.68 353.20 L970.60 335.90 L992.51 328.06 L1014.43 337.81 L1036.34 299.12 L1058.26 240.04 L1080.17 261.09 L1102.09 168.58 L1124.00 244.02" fill="none" stroke="url(#blue)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="94" cy="405.14898633333337" r="4.3" fill="#fff" stroke="#4778d0" stroke-width="2"/><circle cx="159.74468085106383" cy="372.5274323333333" r="4.3" fill="#fff" stroke="#4778d0" stroke-width="2"/><circle cx="225.48936170212767" cy="357.2058416666667" r="4.3" fill="#fff" stroke="#4778d0" stroke-width="2"/><circle cx="291.2340425531915" cy="363.2349183333334" r="4.3" fill="#fff" stroke="#4778d0" stroke-width="2"/><circle cx="356.97872340425533" cy="393.2936962666667" r="4.3" fill="#fff" stroke="#4778d0" stroke-width="2"/><circle cx="422.72340425531917" cy="356.5349161666667" r="4.3" fill="#fff" stroke="#4778d0" stroke-width="2"/><circle cx="488.468085106383" cy="369.53637433333336" r="4.3" fill="#fff" stroke="#4778d0" stroke-width="2"/><circle cx="554.2127659574469" cy="366.8895611666667" r="4.3" fill="#fff" stroke="#4778d0" stroke-width="2"/><circle cx="619.9574468085107" cy="395.4630583333333" r="4.3" fill="#fff" stroke="#4778d0" stroke-width="2"/><circle cx="685.7021276595744" cy="351.4766590000001" r="4.3" fill="#fff" stroke="#4778d0" stroke-width="2"/><circle cx="751.4468085106383" cy="348.0558500000001" r="4.3" fill="#fff" stroke="#4778d0" stroke-width="2"/><circle cx="817.1914893617022" cy="298.490355" r="4.3" fill="#fff" stroke="#4778d0" stroke-width="2"/><circle cx="882.936170212766" cy="346.238832" r="4.3" fill="#fff" stroke="#4778d0" stroke-width="2"/><circle cx="948.6808510638298" cy="353.2021704333333" r="4.3" fill="#fff" stroke="#4778d0" stroke-width="2"/><circle cx="1014.4255319148937" cy="337.8129926666667" r="4.3" fill="#fff" stroke="#4778d0" stroke-width="2"/><circle cx="1080.1702127659576" cy="261.08964386666673" r="4.3" fill="#fff" stroke="#4778d0" stroke-width="2"/><circle cx="1124" cy="244.0214188" r="4.3" fill="#fff" stroke="#4778d0" stroke-width="2"/>
+<text x="94" y="506" class="small">2014</text>
+<text x="1124" y="506" class="small" text-anchor="end">2017</text>
+<text x="600" y="526" text-anchor="middle" class="small">Order month</text>
+</svg>
