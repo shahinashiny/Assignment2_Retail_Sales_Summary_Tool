@@ -17,18 +17,19 @@ def test_load_data_has_expected_fields():
 def test_clean_data_normalizes_text_and_numeric_values():
     raw = pd.DataFrame(
         {
-            "Category": [" Furniture  ", "Office  Supplies"],
-            "Order Date": ["11/8/2016", "not-a-date"],
-            "Sales": ["10.50", "not-a-number"],
-            "Profit": ["2.50", "5.00"],
-            "Quantity": ["2", "1"],
+            "Category": [" Furniture  ", "Office  Supplies", "Gadgets"],
+            "Order Date": ["11/8/2016", "12/9/2016", "not-a-date"],
+            "Sales": ["10.50", "11.00", "not-a-number"],
+            "Profit": ["2.50", "5.00", "5.00"],
+            "Quantity": ["2", "1", "1"],
         }
     )
 
     cleaned = clean_data(raw)
 
-    assert len(cleaned) == 1
+    assert len(cleaned) == 2
     assert cleaned.iloc[0]["Category"] == "Furniture"
+    assert cleaned.iloc[1]["Category"] == "Office Supplies"
     assert cleaned.iloc[0]["Order Date"] == pd.Timestamp("2016-11-08")
     assert cleaned.iloc[0]["Sales"] == pytest.approx(10.5)
     assert cleaned.iloc[0]["Profit"] == pytest.approx(2.5)
