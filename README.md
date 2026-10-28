@@ -109,9 +109,11 @@ Reference values from the included dataset, rounded to two decimal places:
 
 Top product sales and category summaries are documented in [docs/sample_output.md](docs/sample_output.md). Values will change if the input data or cleaning rules change.
 
-## Important repository note
+## Repository privacy note
 
-The `data/` directory also contains `Health_Risk_Tiers.csv`, which is unrelated to retail sales analysis. I have not removed that file. **Before changing this repository from private to public, review that file's purpose, contents, and redistribution rights, and remove it if it is not intentionally part of this project.** Confirm that the Superstore data is also appropriate to redistribute.
+An unrelated dataset was removed from the current version because it is not used by this retail-sales project.
+
+**Keep this repository private for now.** Removing a file from the current version does not erase it from earlier Git commits. Before making this repository public, review and clean the Git history so the removed file is not accessible from old commits. Also confirm that the Superstore dataset is suitable for redistribution.
 
 ## Author
 
