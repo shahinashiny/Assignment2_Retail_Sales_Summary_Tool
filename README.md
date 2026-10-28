@@ -1,6 +1,13 @@
 # Retail Sales Summary Tool
 
+[![Python CI](https://github.com/shahinashiny/Assignment2_Retail_Sales_Summary_Tool/actions/workflows/python-ci.yml/badge.svg?branch=main)](https://github.com/shahinashiny/Assignment2_Retail_Sales_Summary_Tool/actions/workflows/python-ci.yml)
+
 A Python and pandas project that cleans a retail Superstore dataset, summarizes sales and profit, identifies top products and customers, and generates charts for quick business review.
+
+## Project summary
+
+Built a Python/pandas retail analytics workflow that loads and cleans transaction data, normalizes inconsistent text, parses date and numeric fields, filters rows with invalid `Sales`/`Profit` values, and produces sales/profit summaries plus category, product, customer, and repeat-product visualizations. The repository includes pytest tests and GitHub Actions CI for Python 3.10–3.12, with Ruff linting and formatting checks.
+
 
 ## Project highlights
 
