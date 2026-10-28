@@ -10,7 +10,7 @@ def sales_summary(df):
     return {
         "Total Sales": total_sales,
         "Total Profit": total_profit,
-        "Average Sales": average_sales
+        "Average Sales": average_sales,
     }
 
 
@@ -37,10 +37,6 @@ def top_10_customers(df):
 
 
 def top_10_repeated_products(df):
-    repeated_products = (
-        df["Product Name"]
-        .value_counts()
-        .reset_index()
-    )
+    repeated_products = df["Product Name"].value_counts().reset_index()
     repeated_products.columns = ["Product Name", "Count"]
     return repeated_products.head(10)
