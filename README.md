@@ -83,13 +83,25 @@ python -m pytest tests/
 
 The tests cover data loading, cleaning behavior, and core summary calculations. Run them from the repository root so Python can resolve the project modules.
 
-## Continuous integration
+## Continuous integration and code quality
 
-GitHub Actions runs the test suite on pushes and pull requests targeting `main`, and it can also be started manually from the Actions tab. The workflow checks the project on Python 3.10, 3.11, and 3.12, installs the dependencies from `requirements.txt`, and runs:
+GitHub Actions runs on pushes and pull requests targeting `main`, and can also be started manually from the Actions tab.
+
+The workflow runs the unit tests on Python 3.10, 3.11, and 3.12:
 
 ```bash
 python -m pytest tests/ -v
 ```
+
+A separate quality job uses [Ruff](https://docs.astral.sh/ruff/) to lint the source and tests and check code formatting:
+
+```bash
+python -m pip install -r requirements-dev.txt
+python -m ruff check src tests
+python -m ruff format --check src tests
+```
+
+Ruff rules and formatting options are defined in `pyproject.toml`. The `.gitignore` excludes Python bytecode, virtual environments, local environment files, test/lint caches, and build output.
 
 Workflow file: [`.github/workflows/python-ci.yml`](.github/workflows/python-ci.yml).
 
