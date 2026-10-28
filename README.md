@@ -42,6 +42,30 @@ A Python and pandas project that cleans a retail Superstore dataset, summarizes 
 └── README.md
 ```
 
+## Architecture and data visualizations
+
+The following diagrams are generated from the project flow and the checked-in `data/superstore.csv`.
+
+### Workflow architecture
+
+![Retail Sales Summary Tool architecture](docs/architecture.svg)
+
+### Sales and profit by category
+
+![Sales and profit by category](docs/sales_profit_by_category.svg)
+
+### Top named products
+
+![Top products by sales](docs/top_products_by_sales.svg)
+
+This ranking omits blank or `N/A` product labels so the chart focuses on identifiable product names.
+
+### Monthly sales trend
+
+![Monthly sales trend](docs/monthly_sales_trend.svg)
+
+The monthly chart excludes rows whose order date cannot be parsed as a valid month/day/year value. The charts are static SVGs generated from the checked-in data; rerun the analysis and refresh the charts when the source data changes.
+
 ## Run locally
 
 Run all commands from the repository root directory.
