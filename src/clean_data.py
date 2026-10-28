@@ -4,9 +4,7 @@ import pandas as pd
 def clean_data(df: pd.DataFrame) -> pd.DataFrame:
     """Normalize text, parse dates/numeric fields, and retain valid sales rows."""
     cleaned = df.copy()
-    cleaned.columns = (
-        cleaned.columns.str.replace('"', "", regex=False).str.strip()
-    )
+    cleaned.columns = cleaned.columns.str.replace('"', "", regex=False).str.strip()
 
     # Normalize inconsistent whitespace so categories/names group consistently.
     for column in cleaned.select_dtypes(include=["object", "string"]).columns:
