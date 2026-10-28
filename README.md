@@ -83,6 +83,16 @@ python -m pytest tests/
 
 The tests cover data loading, cleaning behavior, and core summary calculations. Run them from the repository root so Python can resolve the project modules.
 
+## Continuous integration
+
+GitHub Actions runs the test suite on pushes and pull requests targeting `main`, and it can also be started manually from the Actions tab. The workflow checks the project on Python 3.10, 3.11, and 3.12, installs the dependencies from `requirements.txt`, and runs:
+
+```bash
+python -m pytest tests/ -v
+```
+
+Workflow file: [`.github/workflows/python-ci.yml`](.github/workflows/python-ci.yml).
+
 ## Data and cleaning rules
 
 The main input is `data/superstore.csv`. Important fields include `Order Date`, `Ship Date`, `Category`, `Product Name`, `Customer Name`, `Sales`, `Quantity`, `Discount`, and `Profit`.
