@@ -1,17 +1,16 @@
-from loaddata import load_data
-from clean_data import clean_data
 from analyze import (
     sales_summary,
-    top_10_products,
     top_10_customers,
-    top_10_repeated_products
+    top_10_products,
+    top_10_repeated_products,
 )
-
+from clean_data import clean_data
+from loaddata import load_data
 from visualize import (
+    plot_repeated_products,
     plot_sales_profit_by_category,
-    plot_top_products,
     plot_top_customers,
-    plot_repeated_products
+    plot_top_products,
 )
 
 
