@@ -30,10 +30,17 @@ Built a Python/pandas retail analytics workflow that loads and cleans transactio
 
 ```text
 .
+├── .github/
+│   └── workflows/
+│       └── python-ci.yml
 ├── data/
 │   ├── superstore.csv
 │   └── README.md
 ├── docs/
+│   ├── architecture.svg
+│   ├── monthly_sales_trend.svg
+│   ├── sales_profit_by_category.svg
+│   ├── top_products_by_sales.svg
 │   ├── README.md
 │   └── sample_output.md
 ├── src/
@@ -45,6 +52,8 @@ Built a Python/pandas retail analytics workflow that loads and cleans transactio
 ├── tests/
 │   └── test_pipeline.py
 ├── requirements.txt
+├── requirements-dev.txt
+├── pyproject.toml
 ├── .gitignore
 └── README.md
 ```
